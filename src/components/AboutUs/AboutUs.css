@@ -1,0 +1,65 @@
+.AboutUs__container {
+    height: 100vh;
+    background-image: url('../../assets/AboutUs/background2.png');
+    background-size: 100% 100%;
+    display: flex;
+}
+
+.AboutUs__leftContainer {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5em;
+}
+
+.AboutUs__aboutusContainer {
+    display: flex;
+    align-items: center;
+}
+
+.AboutUs__line {
+    height: 0.1px;
+    width: 60px;
+    background-color: lightgray;
+}
+
+.AboutUs__aboutus {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    margin-left: 1em;
+}
+
+.AboutUs__heading {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    font-size: 2.5em;
+}
+
+.AboutUs__desc {
+    font-family: 'Montserrat', sans-serif;
+    color:  gray;
+}
+
+.AboutUs__rightContainer {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2em;
+    padding-right: 3em;
+}
+
+.AboutUs__imgbackground {
+    height: 333px;
+    width: 490.5px;
+    background-color: #60b0ae;
+    margin-left: 40px;
+    margin-bottom: -300px;
+}
+
+.AboutUs__orientation {
+    color: gray;
+}

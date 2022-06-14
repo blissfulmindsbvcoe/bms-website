@@ -1,0 +1,6 @@
+.Events__container {
+    height: 100vh;
+    background-image: url('../../assets/Events/background5.png');
+    background-size: 100% 100%;
+    display: flex;
+}

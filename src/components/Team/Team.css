@@ -1,0 +1,36 @@
+.Team__container {
+    height: 100vh;
+    background-image: url('../../assets/Team/background3.png');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    justify-content: space-evenly;
+}
+
+.Team__line {
+    height: 0.1px;
+    width: 60px;
+    background-color: lightgray;
+}
+
+.Team__ourteamContainer {
+    display: flex;
+    align-items: center;
+}
+
+.Team__ourteam {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    margin-left: 1em;
+}
+
+.Team__facebehind {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    font-size: xx-large;
+}
+
+.Team__teamContainer {
+    height: 70%;
+}
