@@ -10,11 +10,12 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 5em;
     padding-left: 5em;
 }
 
-.Contact__aboutusContainer {
+.Contact__contactusContainer {
     display: flex;
     align-items: center;
 }
@@ -22,24 +23,18 @@
 .Contact__line {
     height: 0.1px;
     width: 60px;
-    background-color: lightgray;
+    background-color: white;
 }
 
-.Contact__aboutus {
+.Contact__contactus {
     font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
+    color: white;
     margin-left: 1em;
 }
 
-.Contact__heading {
-    font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
-    font-size: 2.5em;
-}
-
-.Contact__desc {
-    font-family: 'Montserrat', sans-serif;
-    color:  gray;
+.Contact__imageContainer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .Contact__rightContainer {
@@ -52,14 +47,23 @@
     padding-right: 3em;
 }
 
-.Contact__imgbackground {
-    height: 333px;
-    width: 490.5px;
-    background-color: #60b0ae;
-    margin-left: 40px;
-    margin-bottom: -300px;
+.Contact__heading {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    font-size: x-large;
 }
 
-.Contact__orientation {
-    color: gray;
+.Contact__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Contact__subheading {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+}
+
+.Contact__value {
+    font-family: 'Montserrat', sans-serif;
 }

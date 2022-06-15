@@ -3,4 +3,85 @@
     background-image: url('../../assets/Events/background5.png');
     background-size: 100% 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Events__innerEventsContainer {
+    height: 60%;
+    width: 90%;
+    display: flex;
+} 
+
+.Events__eventsContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 5em;
+}
+
+.Events__line {
+    height: 0.1px;
+    width: 60px;
+    background-color: lightgray;
+}
+
+.Events__events {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    margin-left: 1em;
+}
+
+.Events__eventDesc {
+    width: 40%;
+    height: 100%;
+    background-color: #60b0ae;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3em;
+}
+
+.Events__eventImage {
+    width: 60%;
+    height: 100%;
+    background-color: #60b0ae;
+    position: relative;
+}
+
+.Events__name {
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: large;
+}
+
+.Events__desc {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: small;
+}
+
+.Events__leftButton {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60b0ae;
+    font-size: xx-large;
+    height: 100%;
+    left: 0;
+    width: 8%;
+}
+
+.Events__rightButton {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60b0ae;
+    font-size: xx-large;
+    height: 100%;
+    right: 0;
+    width: 8%;
 }

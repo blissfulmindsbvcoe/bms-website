@@ -33,4 +33,40 @@
 
 .Team__teamContainer {
     height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Team__memberContainer {
+    height: 40%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Team__memberImage {
+    height: 50%;
+    border-radius: 50%;
+}
+
+.Team__memberCount {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    font-size: x-large;
+}
+
+.Team__memberName {
+    font-family: 'Montserrat', sans-serif;
+    color: #60b0ae;
+    font-size: large;
+}
+
+.Team__memberPosition {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-size: medium;
 }

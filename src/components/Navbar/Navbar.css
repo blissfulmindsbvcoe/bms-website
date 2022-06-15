@@ -11,6 +11,7 @@
 .nav-link {
   color: white;
   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 }
 
 .nav-item {
