@@ -4,6 +4,7 @@ import Team from '../../components/Team/Team';
 import Contact from '../../components/Contact/Contact';
 import Events from '../../components/Events/Events';
 import { useEffect } from 'react';
+import './Home.css'
 // import { animateScroll as scroll } from 'react-scroll';
 
 const Home = () => {
@@ -12,11 +13,16 @@ const Home = () => {
     }, []);
     return (
         <>
-            <Main />
-            <AboutUs />
-            <Team />
-            <Events />
-            <Contact />
+            <div className='mobileView'>
+                For Now and For better experience, You can view it on Desktop.
+            </div>
+            <div className='desktopView'>
+                <Main />
+                <AboutUs />
+                <Team />
+                <Events />
+                <Contact />
+            </div>
         </>
     );
 }
