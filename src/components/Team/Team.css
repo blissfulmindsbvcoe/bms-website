@@ -1,72 +1,86 @@
 .Team__container {
-    height: 100vh;
-    background-image: url('../../assets/Team/background3.png');
+    background-image: url('../../assets/Team/background.jpg');
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.Team__container1 {
+    height: 100vh;
+    display: flex;
+}
+
+.Team__image {
+    height: 100%;
+    width: 50%;
+}
+
+.Team__container1right {
+    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 3em;
-    justify-content: space-evenly;
-}
-
-.Team__line {
-    height: 0.1px;
-    width: 60px;
-    background-color: lightgray;
-}
-
-.Team__ourteamContainer {
-    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.Team__ourteam {
-    font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
-    margin-left: 1em;
-}
-
-.Team__facebehind {
-    font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
-    font-size: xx-large;
 }
 
 .Team__teamContainer {
-    height: 70%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.Team__memberContainer {
-    height: 40%;
-    width: 25%;
+.Team__personContainer {
+    height: 100vh;
+    width: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.Team__memberImageContainer {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
 }
 
 .Team__memberImage {
-    height: 60%;
-    border-radius: 50%;
-}
-
-.Team__memberCount {
-    font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
-    font-size: x-large;
+    height: 100%;
+    width: 100%;
 }
 
 .Team__memberName {
     font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
-    font-size: large;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
 }
 
-.Team__memberPosition {
+.Team__memberDetail {
     font-family: 'Montserrat', sans-serif;
-    color: gray;
-    font-size: medium;
+    font-size: 10.5px;
+    color: grey;
+}
+
+.Team__social-link {
+    font-size: 30px;
+    color: black;
+    margin-left: 10px;
+}
+
+.Team__containerHeading {
+    font-size: 4.5em;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color:teal;
+    font-weight:bolder;
+    padding-left: 7%;
+}
+
+.Team__containerSubHeading {
+    padding-left: 7%;
+    padding-right: 7%;
 }

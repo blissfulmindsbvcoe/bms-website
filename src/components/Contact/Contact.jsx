@@ -1,32 +1,31 @@
 import './Contact.css';
-import image1 from '../../assets/Contact/img1.PNG';
+import line from '../../assets/Contact/line.png';
+import map from '../../assets/Contact/map.png';
 
 const Contact = () => {
     return (
-        <div id='contact' className='Contact__container'>
-            <div className='Contact__leftContainer'>
-                <div className='Contact__contactusContainer'>
-                    <div className='Contact__line'></div>
-                    <div className='Contact__contactus'>CONTACT US</div>
-                </div>
-                <div className='Contact__imageContainer'>
-                    <img alt='contactus1' width='402.9px' height='459px' src={image1}/>
-                </div>
+        <div className="Contact__container">
+            <div className="Contact__leftContainer">
+                <h1 className='Contact__leftContainerh1'>Get in touch!</h1>
+                <img className='Contact__leftContainerimg' src={line} alt="line" />
+                <form className="Contact__leftContainerForm" action="index.html" method="post">
+                    <input className='Contact__leftContainerInput' type="text" name="name" placeholder="Enter your name" /> <br />
+                    <input className='Contact__leftContainerInput' type="email" name="email" placeholder="Enter valid email address"/> <br />
+                    <textarea className='Contact__leftContainerInput' name="message" rows="8" cols="70" placeholder="Enter your message"></textarea>
+                    <input className='Contact__leftContainerInput' type="submit" name="submit" value="Submit "/>
+                </form>
             </div>
-            <div className='Contact__rightContainer'>
-                <div>
-                    <div className='Contact__heading'>Have something to say</div>
-                    <div className='Contact__heading'>Let's connect!</div>
-                </div>
-                <div className='Contact__contact'>
-                    <div className='Contact__subheading'>EMAIL</div>
-                    <div>
-                        <div className='Contact__value'>blissfulminds.bvcoe@gmail.com</div>
+            <div className="Contact__rightContainer">
+                <div className="Contact__topContainer">
+                    <div className="Contact__topContainerText">
+                        <h2 className='Contact__topContainerh2'>ADDRESS</h2>
+                        <p className='Contact__topContainerp'><em>A-4 block, Baba Ramdev Marg, <br/>Shiva Enclave, Paschim Vihar, <br/>New Delhi, Delhi-110063</em></p>
+                        <h2 className='Contact__topContainerh2'>CALL US</h2>
+                        <p className='Contact__topContainerp'><em>91-9999874619 <br/>91-9958190385</em></p>
+                        <h2 className='Contact__topContainerh2'>Mental health <br/> rehabilitation centre</h2>
+                        <p className='Contact__topContainerp'><em>1800-599-0019</em></p>
                     </div>
-                    <div className='Contact__subheading'>CONTACT INFO</div>
-                    <div>
-                        <div className='Contact__value'>Shivam Kapur: +91-9999874619</div>
-                    </div>
+                    <img className="Contact__topContainerimg" src={map} alt="map" />
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 const Home = lazy(() => import('./pages/Home/Home.page'))
+const About = lazy(() => import('./pages/About/About.page'))
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         {/* <Header /> */}
         <Routes>
           <Route exact path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>} />
         </Routes>
         {/* <Footer /> */}
       </Suspense>

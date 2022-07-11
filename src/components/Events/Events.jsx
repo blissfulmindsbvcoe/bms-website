@@ -1,48 +1,47 @@
 import './Events.css';
+import shanti from '../../assets/Events/shaanti.png'
 import { EventsData } from '../../data/events.data';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Events = () => {
     const [eventNo, setEventNo] = useState(0);
 
-    const previous = () => {
-        if(eventNo !== 0)
-            setEventNo(prev => (prev-1))
+    const changeImage = () => {
+        setEventNo(Math.floor(Math.random() * (EventsData.length)));
     }
 
-    const next = () => {
-        console.log(eventNo)
-        if(eventNo < EventsData.length-1)
-            setEventNo(prev => (prev+1))
-    }
+    useEffect(()=> {
+        setInterval(()=>{changeImage()}, 10000)
+    }, [])
 
     return (
-        <div id='events' className='Events__container'>
-            <div style={{width: "100%"}}>
-                <div className='Events__eventsContainer'>
-                    <div className='Events__line'></div>
-                    <div className='Events__events'>Events</div>
+        <div class="Events__container">
+            <div class="Events__top-container">
+                <div className='Events__inside-top-container'>
+                    <div className='Events__topLeftContainer'>
+                        <div className='Events__topLeftContainerDiv1'>
+                            <img src={shanti} alt="shaanti" height='100%'/>
+                        </div>
+                        <div className='Events__topLeftContainerDiv2'>
+                            <p className='Events__name'>{EventsData[eventNo].name}</p>
+                            <p className='Events__desc'>{EventsData[eventNo].description}</p>    
+                        </div>
+                    </div>
+                    <div className='Events__topRightContainer'>
+                        <img className='Events__image' src={EventsData[eventNo].imageSrc} alt="group pic" height='100%' width='100%'/>
+                    </div>
                 </div>
             </div>
-            <div className='Events__innerEventsContainer'>
-                <div className='Events__eventDesc'>
-                    <div className='Events__name'>{EventsData[eventNo].name}</div>
-                    <div className='Events__desc'>{EventsData[eventNo].description}</div>
+            <div className="Events__bottom-container">
+                <div className='Events__bottomLeftContainer'>
+                    <p className='Events__bottomLeftContainerh'>Celebrating</p>
+                    <p className='Events__bottomLeftContainerh'>Pride Month</p>
                 </div>
-                <div className='Events__eventImage'>
-                    {
-                        (eventNo > 0) && 
-                            <div className='Events__leftButton' onClick={previous}>
-                                <i className="fa-solid fa-chevron-left"></i>
-                            </div>
-                    }
-                    {
-                        (eventNo < EventsData.length-1) &&
-                            <div className='Events__rightButton' onClick={next}>
-                                <i className="fa-solid fa-chevron-right"></i>
-                            </div>
-                    }
-                    <img alt="event" height='100%' width='100%' src={EventsData[eventNo].imageSrc} />
+                <div className='Events__bottomRightContainer'>
+                    <p className='Events__bottomRightContainerh'>Registration for</p>
+                    <p className='Events__bottomRightContainerh'>Team Open</p>
+                    <p className='Events__bottomRightContainersh'>Register Now</p>
                 </div>
             </div>
         </div>

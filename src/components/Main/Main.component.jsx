@@ -1,24 +1,40 @@
-import Navbar from '../Navbar/Navbar.component';
+import Navbar from '../../components/Navbar/Navbar.component';
+import eventImage from '../../assets/Main/nature.jpg';
 import './Main.css';
 
 const Main = () => {
     return (
         <div className='Main__container'>
-            <Navbar />
-            <div className='Main__innerContainer'>
-                <div className='Main__leftContainer'>
-                    <div className='Main__taglineContainer'>
-                        <div className='Main__line'></div>
-                        <p className='Main__tagline'>KEEPING MENTAL HEALTH IN CHECK</p>
+            <div className='Main__leftContainer'>
+                <p className='Main__leftContainerp'>Blissful Minds Society</p>
+                <p className='Main__leftContainerSubp'>Keeping Mental Health in Check</p>
+                <div className='Main__line'></div>
+                <div className='Main__bottomLeftContainer'>
+                    <div className='Main__BLContainer1'>
+                        <div className='Main__NumberContainer'>
+                            <div className='Main__Number'>02</div>
+                            <div className='Main__horizontalLine'></div>
+                        </div>
+                        <div className='Main__NameEvent'>Orientation</div>
                     </div>
-                    <p className='Main__name1'>Blissful Minds</p>
-                    <p className='Main__name2'>Society</p>
-                    <p className='Main__tagline2'>Creating a community for all to be aware and know more about mental health.</p>
+                    <div className='Main__BLContainer2'>
+                        <div className='Main__NumberContainer'>
+                            <div className='Main__Number'>03</div>
+                            <div className='Main__horizontalLine'></div>
+                        </div>
+                        <div className='Main__NameEvent'>Workshop</div>
+                    </div>
+                    <div className='Main__BLContainer3'>
+                        <div className='Main__NumberContainer'>
+                            <div className='Main__Number'>04</div>
+                            <div className='Main__horizontalLine'></div>
+                        </div>
+                        <div className='Main__NameEvent'>BMS Fiesta</div>
+                    </div>
                 </div>
-                <div className='Main__rightContainer'>
-                    <div className='Main__impNewsHeading'>IMPORTANT NEWS</div>
-                    <div className='Main__news'></div>
-                </div>
+            </div>
+            <div className='Main__rightContainer'>
+                <img className='Main__rightContainerimg' src={eventImage} alt="img" />
             </div>
         </div>
     );

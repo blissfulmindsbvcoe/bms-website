@@ -1,95 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 .Events__container {
     height: 100vh;
-    background-image: url('../../assets/Events/background5.png');
-    background-size: 100% 100%;
+    background-image: linear-gradient(to bottom left, #F66F70, #F6D589);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
-.Events__innerEventsContainer {
-    height: 60%;
+.Events__top-container{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Events__bottom-container {
+    height: 35%;
+    width: 100%;
+    display: flex;
+}
+
+.Events__inside-top-container {
+    height: 80%;
     width: 90%;
+    background: url('../../assets/Events/Marble_blue.jpg');
     display: flex;
-} 
-
-.Events__eventsContainer {
-    display: flex;
-    align-items: center;
-    padding-left: 5em;
 }
 
-.Events__line {
-    height: 0.1px;
-    width: 60px;
-    background-color: lightgray;
-}
-
-.Events__events {
-    font-family: 'Montserrat', sans-serif;
-    color: #60b0ae;
-    margin-left: 1em;
-}
-
-.Events__eventDesc {
-    width: 40%;
+.Events__topLeftContainer {
+    width: 50%;
     height: 100%;
-    background-color: #60b0ae;
+    display: flex;
+    flex-direction: column;
+}
+
+.Events__topLeftContainerDiv1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Events__topLeftContainerDiv2 {
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 3em;
+    margin-left: 2em;
 }
 
-.Events__eventImage {
-    width: 60%;
+.Events__topRightContainer {
+    width: 50%;
     height: 100%;
-    background-color: #60b0ae;
-    position: relative;
+    padding-left: 1em;
+}
+
+.Events__bottomLeftContainer {
+    height: 100%;
+    width: 50%;
+    background: url('../../assets/Events/Pride_flag.jpeg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4%;
+}
+
+.Events__bottomLeftContainerh {
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Events__bottomRightContainer {
+    height: 100%;
+    width: 50%;
+    background: url('../../assets/Events/Group 17.png');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.Events__bottomRightContainerh{
+    font-size: 25px;
+    font-weight: 900;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Events__name {
-    margin-bottom: 1em;
+    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: large;
+    font-size: x-large;
+    font-weight: 600;
 }
 
 .Events__desc {
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: small;
+    font-size: xx-small;
+    padding-right: 4em;
 }
 
-.Events__leftButton {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #60b0ae;
-    font-size: xx-large;
-    height: 100%;
-    left: 0;
-    width: 8%;
-}
-
-.Events__leftButton:hover {
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,1))
-}
-
-.Events__rightButton {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #60b0ae;
-    font-size: xx-large;
-    height: 100%;
-    right: 0;
-    width: 8%;
-}
-
-.Events__rightButton:hover {
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,1))
+.Events__image {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
 }
