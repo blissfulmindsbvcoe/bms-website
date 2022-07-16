@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+.navbar {
+  border-bottom: 0.1px solid whitesmoke;
+}
+
+.nav-link {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.nav-item {
+  margin: 0 1em;
+}
+
+.Navbar__line {
+  width: 3em;
+  border: 1px solid whitesmoke;
+}
+
+.Navbar__logo {
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.Main__container {
+    background: linear-gradient(180deg, #F76E70 25% , #F64B9E);
+    height: 100vh;
+    display: flex;
+    font-family: 'Montserrat';
+}
+
+.Main__leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: flex-end;
+    background-color: white;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.Main__rightContainer {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main__rightContainerimg {
+    height: 80%;
+    width: 70%;
+    border: 5px solid white;
+    border-radius: 40%;
+}
+
+.Main__leftContainerp {
+    font-size: 4.5em;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color:teal;
+    font-weight:bolder;
+    padding-left: 7%;
+}
+
+.Main__leftContainerSubp {
+    color: #F76E70;
+    font-weight:500;
+    font-size: 20px;
+    padding-left: 7%;
+}
+
+.Main__line {
+    height: 5px;
+    width: 60%;
+    background: linear-gradient(to right, #F76E70, rgba(255,255,255,1));
+    border-radius: 25px;
+    margin-left: 7%;
+}
+
+.Main__bottomLeftContainer {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+.Main__BLContainer1 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.Main__BLContainer2 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Main__BLContainer3 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Main__NumberContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Main__Number {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.Main__NameEvent {
+    font-size: 1.3em;
+    color: grey;
+}
+
+.Main__horizontalLine {
+    width: 30%;
+    background-color: #F76E70;
+    height: 3px;
+    border-radius: 25px;
+}

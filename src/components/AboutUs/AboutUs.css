@@ -1,0 +1,40 @@
+.AboutUs__container {
+  height: 100vh;
+  background-image:   url("../../assets/AboutUs/groupphoto.png"),  url("../../assets/AboutUs/blogs1.png"), url("../../assets/AboutUs/blogs2.png");
+  background-position: 0 0, 65% 0, 100% 0;
+  background-size: 50% 100%, 22% 100%, 28% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.AboutUS__textContainer {
+  display: flex;
+  background-image: linear-gradient(to bottom, transparent 0%, #000000bd 60%, #000000 95%);
+  height: 21%;
+  color: #fff;
+  padding-left: 4%;
+}
+
+.AboutUs__leftText, .AboutUs__rightText {
+  width: 50%;
+}
+
+.AboutUs__a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+  padding-left: 0.1rem;
+}
+
+.AboutUs__a:link {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.AboutUs__h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
