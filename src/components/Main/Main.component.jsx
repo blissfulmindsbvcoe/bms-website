@@ -1,4 +1,3 @@
-import Navbar from '../../components/Navbar/Navbar.component';
 import eventImage from '../../assets/Main/landing2.jpg';
 import orientation from '../../assets/Main/orientation1.jpg';
 import Webinar from '../../assets/Main/event2.jpg';

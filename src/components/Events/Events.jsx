@@ -1,5 +1,4 @@
 import './Events.css';
-import shanti from '../../assets/Events/shaanti.png'
 import { EventsData } from '../../data/events.data';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -16,13 +15,13 @@ const Events = () => {
     }, [])
 
     return (
-        <div class="Events__container">
+        <div id="events" class="Events__container">
             <div class="Events__top-container">
                 <div className='Events__inside-top-container'>
                     <div className='Events__topLeftContainer'>
-                        <div className='Events__topLeftContainerDiv1'>
+                        {/* <div className='Events__topLeftContainerDiv1'>
                             <img src={shanti} alt="shaanti" height='100%'/>
-                        </div>
+                        </div> */}
                         <div className='Events__topLeftContainerDiv2'>
                             <p className='Events__name'>{EventsData[eventNo].name}</p>
                             <p className='Events__desc'>{EventsData[eventNo].description}</p>    
@@ -39,9 +38,9 @@ const Events = () => {
                     <p className='Events__bottomLeftContainerh'>Pride Month</p>
                 </div>
                 <div className='Events__bottomRightContainer'>
-                    <p className='Events__bottomRightContainerh'>Registration for</p>
+                    {/* <p className='Events__bottomRightContainerh'>Registration for</p>
                     <p className='Events__bottomRightContainerh'>Team Open</p>
-                    <p className='Events__bottomRightContainersh'>Register Now</p>
+                    <p className='Events__bottomRightContainersh'>Register Now</p> */}
                 </div>
             </div>
         </div>
