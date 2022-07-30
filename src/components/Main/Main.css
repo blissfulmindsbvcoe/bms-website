@@ -108,3 +108,7 @@
     height: 3px;
     border-radius: 25px;
 }
+.event_image{
+    height: 100px;
+    justify-content: flex-end;
+}

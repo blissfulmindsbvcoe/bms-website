@@ -1,8 +1,8 @@
 .AboutUs__container {
   height: 100vh;
-  background-image:   url("../../assets/AboutUs/groupphoto.png"),  url("../../assets/AboutUs/blogs1.png"), url("../../assets/AboutUs/blogs2.png");
+  background-image:   url("../../assets/AboutUs/groupphoto.png"),  url("../../assets/AboutUs/blogscover.jpg"), url("../../assets/AboutUs/smile.jpg");
   background-position: 0 0, 65% 0, 100% 0;
-  background-size: 50% 100%, 22% 100%, 28% 100%;
+  background-size: 47% 100%, 27% 100%, 25% 100%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;

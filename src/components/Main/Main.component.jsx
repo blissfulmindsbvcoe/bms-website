@@ -1,5 +1,9 @@
 import Navbar from '../../components/Navbar/Navbar.component';
-import eventImage from '../../assets/Main/nature.jpg';
+import eventImage from '../../assets/Main/landing2.jpg';
+import orientation from '../../assets/Main/orientation1.jpg';
+import Webinar from '../../assets/Main/event2.jpg';
+import mind from '../../assets/Main/mindyourmind1.jpg';
+
 import './Main.css';
 
 const Main = () => {
@@ -15,21 +19,24 @@ const Main = () => {
                             <div className='Main__Number'>02</div>
                             <div className='Main__horizontalLine'></div>
                         </div>
-                        <div className='Main__NameEvent'>Orientation</div>
+                        <div className='Main__NameEvent'>Mind Your Mind</div>
+                        <img src={mind} alt="img" height='60%' width='75%'/>
                     </div>
                     <div className='Main__BLContainer2'>
                         <div className='Main__NumberContainer'>
                             <div className='Main__Number'>03</div>
                             <div className='Main__horizontalLine'></div>
                         </div>
-                        <div className='Main__NameEvent'>Workshop</div>
+                        <div className='Main__NameEvent'>Webinar</div>
+                        <img  src={Webinar} alt="img" height='60%' width='75%'/>
                     </div>
                     <div className='Main__BLContainer3'>
                         <div className='Main__NumberContainer'>
                             <div className='Main__Number'>04</div>
                             <div className='Main__horizontalLine'></div>
                         </div>
-                        <div className='Main__NameEvent'>BMS Fiesta</div>
+                        <div className='Main__NameEvent'>Orientation</div>
+                        <img  src={orientation} alt="img" height='60%' width='75%'/>
                     </div>
                 </div>
             </div>
