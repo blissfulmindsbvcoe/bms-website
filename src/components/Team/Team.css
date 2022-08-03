@@ -1,0 +1,108 @@
+.Team__container {
+    background-image: url('../../assets/Team/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.Team__container1 {
+    height: 100vh;
+    display: flex;
+}
+
+.Team__image {
+    height: 100%;
+    width: 50%;
+}
+
+.Team__container1right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Team__teamContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.Team__personContainer {
+    height: 100vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.Team__memberImageContainer {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+}
+
+.Team__memberImage {
+    height: 100%;
+    width: 100%;
+}
+
+.Team__memberName {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Team__memberDetail {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10.5px;
+    color: grey;
+}
+
+.Team__social-link {
+    font-size: 30px;
+    color: black;
+    margin-left: 10px;
+}
+
+.Team__containerHeading {
+    font-size: 4.5em;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    color:teal;
+    font-weight:bolder;
+    padding-left: 7%;
+}
+
+.Team__containerSubHeading {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.Team__heading {
+    margin-left: 2%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.Team__teacherData {
+    word-wrap: normal;
+    width: 50%;
+    height: 80%;
+
+}
+
+.Team__teacherCoordinator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

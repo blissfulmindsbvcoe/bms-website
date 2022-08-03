@@ -1,0 +1,25 @@
+.mobileView{
+    display: none;
+}
+
+.componentContainer {
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    .mobileView {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        color: #60b0ae;
+        font-family: 'Montserrat', sans-serif;
+        height: 100vh;
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .desktopView {
+        display: none;
+    }
+}

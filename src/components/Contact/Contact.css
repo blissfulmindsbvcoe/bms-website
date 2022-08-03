@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.Contact__container {
+  height: 100vh;
+  font-family: 'Montserrat';
+  display: flex;
+}
+
+.Contact__leftContainer {
+  background-color: #393939;
+  float: left;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contact__leftContainerh1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  padding-left: 4rem;
+}
+
+.Contact__leftContainerimg {
+  width: 50%;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.Contact__leftContainerForm {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact__leftContainerInput {
+  width: 70%;
+  max-height: 10rem;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+::placeholder {
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.Contact__leftContainerInput[type=submit] {
+    background-color: red;
+    width: 10rem;
+    padding: 0 0;
+    border: 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.Contact__rightContainer {
+    background-image: linear-gradient(#f66f6f, #f6548f);
+    width: 40%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact__topContainer {
+  z-index: 1;
+  left: 40rem;
+  top: 4rem;
+  height: 78.3%;
+  width: 35rem;
+  background-color: #fff;
+  display: flex;
+  margin-left: -25%;
+}
+
+.Contact__topContainerimg {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.Contact__topContainerText {
+  float: left;
+  padding: 1rem 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.Contact__topContainerh2 {
+  font-weight: 500;
+}
+
+.Contact__topContainerp {
+  color: #393939;
+  font-weight: 400;
+  padding-right: 2%;
+}
