@@ -1,4 +1,13 @@
-export const TeamData = [
+export const TeacherData = {
+    name: "Prof. Rubeena Vohra",
+    imageSrc: require('../assets/Team/shivam.jpeg'),
+    linkedInURL: 'https://www.google.com/',
+    facebookURL: 'https://www.google.com/',
+    instagramURL: 'https://www.google.com/',
+    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris urna, suscipit eu vulputate placerat, ullamcorper nec sem. Mauris accumsan enim non augue dapibus, sed rutrum elit pulvinar. Proin vulputate vel sem non posuere. Curabitur lacinia fringilla augue, ut finibus mi blandit vitae. Pellentesque ligula nibh, rhoncus id iaculis a, condimentum sit amet velit. Sed bibendum nisi et fermentum vehicula. Etiam ac velit efficitur, aliquam erat vehicula, elementum lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris urna, suscipit eu vulputate placerat, ullamcorper nec sem. Mauris accumsan enim non augue dapibus, sed rutrum elit pulvinar. Proin vulputate vel sem non posuere. Curabitur lacinia fringilla augue, ut finibus mi blandit vitae. Pellentesque ligula nibh, rhoncus id iaculis a, condimentum sit amet velit. Sed bibendum nisi et fermentum vehicula. Etiam ac velit efficitur, aliquam erat vehicula, elementum lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris urna, suscipit eu vulputate placerat, ullamcorper nec sem. Mauris accumsan enim non augue dapibus, sed rutrum elit pulvinar. Proin vulputate vel sem non posuere. Curabitur lacinia fringilla augue, ut finibus mi blandit vitae. Pellentesque ligula nibh, rhoncus id iaculis a, condimentum sit amet velit. Sed bibendum nisi et fermentum vehicula. Etiam ac velit efficitur, aliquam erat vehicula, elementum lorem."
+}
+
+export const FoundersData = [
     {
         name: "Shivam Kapur",
         position: "Chairperson",
@@ -17,6 +26,17 @@ export const TeamData = [
         instagramURL: 'https://www.google.com/',
         detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris urna, suscipit eu vulputate placerat, ullamcorper nec sem. Mauris accumsan enim non augue dapibus, sed rutrum elit pulvinar. Proin vulputate vel sem non posuere. Curabitur lacinia fringilla augue, ut finibus mi blandit vitae. Pellentesque ligula nibh, rhoncus id iaculis a, condimentum sit amet velit. Sed bibendum nisi et fermentum vehicula. Etiam ac velit efficitur, aliquam erat vehicula, elementum lorem."
     },
+    {
+        name: "Nikita Tiwari",
+        position: "",
+        imageSrc: require('../assets/Team/gurusha.jpeg'),
+        linkedInURL: 'https://www.google.com/',
+        facebookURL: 'https://www.google.com/',
+        instagramURL: 'https://www.google.com/',
+        detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mauris urna, suscipit eu vulputate placerat, ullamcorper nec sem. Mauris accumsan enim non augue dapibus, sed rutrum elit pulvinar. Proin vulputate vel sem non posuere. Curabitur lacinia fringilla augue, ut finibus mi blandit vitae. Pellentesque ligula nibh, rhoncus id iaculis a, condimentum sit amet velit. Sed bibendum nisi et fermentum vehicula. Etiam ac velit efficitur, aliquam erat vehicula, elementum lorem."
+    },
+];
+export const TeamData = [
     {
         name: "Tisha Kapoor",
         position: "Vice Chairperson",

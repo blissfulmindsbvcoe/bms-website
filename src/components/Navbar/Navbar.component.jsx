@@ -3,45 +3,38 @@ import logo from '../../assets/Main/logo.png'
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-      <nav className="navbar navbar-expand-lg" style={{height: '4em'}}>
-        <div className="container-fluid d-flex justify-content-end">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+      <header className='Navbar__Container'>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="/"><img src={logo} alt="bms-logo" height="37px"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarText">
-            <div className='Navbar__logo'>
-              <img alt="BMS Logo" style={{marginLeft: "25px", marginTop: "35px"}} src={logo} height="110px" width="110px"/>
-            </div>
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a className="navLink" href='/'>HOME</a>
               </li>
-              <li className="nav-item">
-                <ScrollLink className="nav-link" to='aboutus' spy={true} smooth={true} duration={500}>About</ScrollLink>
+              {!props.isTeam && <li class="nav-item">
+                <ScrollLink className="navLink" to="about" spy={true} smooth={true} duration={500}>ABOUT</ScrollLink>
+              </li>}
+              <li class="nav-item">
+                <Link className="navLink" to="/about" >TEAM</Link>
               </li>
-              <li className="nav-item">
-                <ScrollLink className="nav-link" to='team' spy={true} smooth={true} duration={500}>Team</ScrollLink>
+              {!props.isTeam && <li class="nav-item">
+                <ScrollLink className="navLink" to="events" spy={true} smooth={true} duration={500}>EVENTS</ScrollLink>
+              </li>}
+              <li class="nav-item">
+              <a className="navLink" href='https://blogs.blissfulmindsbvcoe.com/'>BLOGS</a>
               </li>
-              <li className="nav-item">
-                <ScrollLink className="nav-link" to='events' spy={true} smooth={true} duration={500}>Events</ScrollLink>
-              </li>
-              <li className="nav-item">
-                <ScrollLink className="nav-link" to='contact' spy={true} smooth={true} duration={500}>Contact</ScrollLink>
-              </li>
-              <li className="nav-item" style={{marginRight: '-0.5em'}}>
-                <div style={{display: 'flex', alignItems: 'center', height: '100%'}}>
-                  <div className='Navbar__line'></div>
-                </div>
-              </li>
-              <li className="nav-item">
-                <i className="fa-solid fa-globe" style={{color: 'white'}}></i>
-              </li>
+              {!props.isTeam && <li class="nav-item">
+              <button class="btn" type="button" name="button" onClick={()=>{window.location.hash = "";window.location.hash = "contact";}}>CONTACT US</button>
+              </li>}
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
     );
 }
 

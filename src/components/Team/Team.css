@@ -27,7 +27,7 @@
 
 .Team__teamContainer {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
@@ -55,7 +55,7 @@
 .Team__memberName {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -83,4 +83,26 @@
 .Team__containerSubHeading {
     padding-left: 7%;
     padding-right: 7%;
+}
+
+.Team__heading {
+    margin-left: 2%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.Team__teacherData {
+    word-wrap: normal;
+    width: 50%;
+    height: 80%;
+
+}
+
+.Team__teacherCoordinator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
