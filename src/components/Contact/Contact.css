@@ -90,6 +90,10 @@
 .Contact__topContainerText {
   float: left;
   padding: 1rem 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .Contact__topContainerh2 {
@@ -99,4 +103,5 @@
 .Contact__topContainerp {
   color: #393939;
   font-weight: 400;
+  padding-right: 2%;
 }

@@ -1,18 +1,31 @@
 import './Events.css';
 import { EventsData } from '../../data/events.data';
 import { useState } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 const Events = () => {
     const [eventNo, setEventNo] = useState(0);
 
-    const changeImage = () => {
-        setEventNo(Math.floor(Math.random() * (EventsData.length)));
+
+    const nextImage = () => {
+        if(eventNo === EventsData.length-1){
+            setEventNo(0);
+        } else {
+            setEventNo(prev => (prev + 1));
+        }
     }
 
-    useEffect(()=> {
-        setInterval(()=>{changeImage()}, 10000)
-    }, [])
+    const prevImage = () => {
+        if(eventNo === 0){
+            setEventNo(EventsData.length-1);
+        } else {
+            setEventNo(prev => (prev - 1));
+        }
+    }
+
+    // useEffect(()=> {
+    //     setInterval(()=>{changeImage()}, 10000)
+    // }, [])
 
     return (
         <div id="events" class="Events__container">
@@ -28,6 +41,10 @@ const Events = () => {
                         </div>
                     </div>
                     <div className='Events__topRightContainer'>
+                        <div className='Events__Overlay'>
+                            <div className='Events__leftOverlay' onClick={prevImage}><i className="fa-solid fa-angle-left" style={{fontSize: '50px', color: 'black'}}></i></div>
+                            <div className='Events__rightOverlay' onClick={nextImage}><i className="fa-solid fa-angle-right" style={{fontSize: '50px', color: 'black'}}></i></div>
+                        </div>
                         <img className='Events__image' src={EventsData[eventNo].imageSrc} alt="group pic" height='100%' width='100%'/>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ const Home = () => {
                 For Now and For better experience, You can view it on Desktop.
             </div>
             <div className='desktopView'>
-                <Navbar />
+                <Navbar isTeam={false}/>
                 <div className='componentContainer'>
                     <Main />
                     <AboutUs />
