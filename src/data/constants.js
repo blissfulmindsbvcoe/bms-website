@@ -1,0 +1,1 @@
+export const fetchBlogsURL = 'https://www.googleapis.com/blogger/v3/blogs/972381828056503228/posts?key=AIzaSyBq8Mqee5bQ0n_manKS9Y-sA2f6vgc4aUo'
