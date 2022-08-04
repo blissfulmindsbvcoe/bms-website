@@ -1,11 +1,11 @@
 import './Events.css';
 import { EventsData } from '../../data/events.data';
-import { useState } from 'react';
-// import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { fetchBlogsURL } from '../../data/constants';
 
 const Events = () => {
     const [eventNo, setEventNo] = useState(0);
-
+    const [blogs, setBlogs] = useState({});
 
     const nextImage = () => {
         if(eventNo === EventsData.length-1){
@@ -23,13 +23,15 @@ const Events = () => {
         }
     }
 
-    // useEffect(()=> {
-    //     setInterval(()=>{changeImage()}, 10000)
-    // }, [])
+    useEffect(()=> {
+        fetch(fetchBlogsURL)
+            .then((response) => response.json())
+            .then((data) => {console.log(data);setBlogs(data)});
+    }, [])
 
     return (
-        <div id="events" class="Events__container">
-            <div class="Events__top-container">
+        <div id="events" className="Events__container">
+            <div className="Events__top-container">
                 <div className='Events__inside-top-container'>
                     <div className='Events__topLeftContainer'>
                         {/* <div className='Events__topLeftContainerDiv1'>
@@ -55,9 +57,9 @@ const Events = () => {
                     <p className='Events__bottomLeftContainerh'>Pride Month</p>
                 </div>
                 <div className='Events__bottomRightContainer'>
-                    {/* <p className='Events__bottomRightContainerh'>Registration for</p>
-                    <p className='Events__bottomRightContainerh'>Team Open</p>
-                    <p className='Events__bottomRightContainersh'>Register Now</p> */}
+                    <p className='Events__bottomRightContainerh'>Latest Blogs</p>
+                    {blogs?.items && <p style={{fontSize: "25px"}}>{blogs.items[0].title}</p>}
+                    {blogs?.items && <a className='Events__aa' href={blogs.items[0].url}>Check this blog out!</a>}
                 </div>
             </div>
         </div>

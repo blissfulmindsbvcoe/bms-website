@@ -14,7 +14,13 @@ const Team = () => {
             <Navbar isTeam={true}/>
             <div className='Team__container'>
                 <div className='Team__container1'>
-                    <img className='Team__image' src={grppic} alt='group pic' />
+                    <div className='Team__container1left'>
+                        <div className='Team__Overlay'>
+                            <div className='Team__leftOverlay'><i className="fa-solid fa-angle-left" style={{fontSize: '50px', color: 'black'}}></i></div>
+                            <div className='Team__rightOverlay'><i className="fa-solid fa-angle-right" style={{fontSize: '50px', color: 'black'}}></i></div>
+                        </div>
+                        <img className='Team__image' src={grppic} alt='group pic' height="100%" width="100%" />
+                    </div>
                     <div className='Team__container1right'>
                         <p className='Team__containerHeading'>Blissful Minds Society</p>
                         <p className='Team__containerSubHeading'>Popularly abbreviated as BMS and founded in 2022, is the first student-led Mental Health society at Bharati Vidyapeeth’s College of Engineering and IP University. The main purpose of BMS is to advocate the cause of spreading awareness about mental health issues and encourage people to look beyond the stigma associated with this sensitive subject. The vision of our society is to create a safe space for all, such that under no circumstance, a student feels hesitant to talk about his/her mental health issues. We aim to destigmatize mental illness by conducting interactive and fun sessions, wherein the students can feel heard and can be given useful advice</p>
@@ -22,7 +28,7 @@ const Team = () => {
                 </div>
                 <div className='Team__heading'>TEACHER COORDINATORS</div>
                 <div className='Team__teacherCoordinator'>
-                    <img src={TeacherData.imageSrc} height='80%' width='40%' alt='teacher image' />
+                    <img src={TeacherData.imageSrc} height='80%' width='40%' alt="teacher"/>
                     <div className='Team__teacherData'>{TeacherData.detail}</div>
                 </div>
                 <div className='Team__heading'>OUR FOUNDERS</div>
