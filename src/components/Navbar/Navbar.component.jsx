@@ -16,20 +16,23 @@ const Navbar = (props) => {
               <li className="nav-item">
                 <a className="navLink" href='/'>HOME</a>
               </li>
-              {!props.isTeam && <li className="nav-item">
-                <ScrollLink className="navLink" to="about" spy={true} smooth={true} duration={500}>ABOUT</ScrollLink>
-              </li>}
               <li className="nav-item">
-                <Link className="navLink" to="/about" >TEAM</Link>
+                <Link className="navLink" to="/about" >ABOUT</Link>
               </li>
               {!props.isTeam && <li className="nav-item">
                 <ScrollLink className="navLink" to="events" spy={true} smooth={true} duration={500}>EVENTS</ScrollLink>
+              </li>}
+              {props.isTeam && <li className="nav-item">
+              <Link className="navLink" to="/" >EVENTS</Link>
               </li>}
               <li className="nav-item">
               <a className="navLink" href='https://blogs.blissfulmindsbvcoe.com/'>BLOGS</a>
               </li>
               {!props.isTeam && <li className="nav-item">
               <button className="btn" type="button" name="button" onClick={()=>{window.location.hash = "";window.location.hash = "contact";}}>CONTACT US</button>
+              </li>}
+              {props.isTeam && <li className="nav-item">
+              <button className="btn" type="button" name="button" onClick={()=>{window.location = "/";}}>CONTACT US</button>
               </li>}
             </ul>
           </div>

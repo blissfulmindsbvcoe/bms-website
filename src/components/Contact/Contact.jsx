@@ -56,7 +56,7 @@ const Contact = () => {
                 <div className="Contact__topContainer">
                     <div className="Contact__topContainerText">
                         <h2 className='Contact__topContainerh2'>ADDRESS</h2>
-                        <p className='Contact__topContainerp'><em>A-4 block, Baba Ramdev Marg, <br/>Shiva Enclave, Paschim Vihar, <br/>New Delhi, Delhi-110063</em></p>
+                        <p className='Contact__topContainerp'><em>A-4 block, Baba Ramdev Marg, Shiva Enclave, Paschim Vihar, <br/>New Delhi, Delhi-110063</em></p>
                         <h2 className='Contact__topContainerh2'>CALL US</h2>
                         <p className='Contact__topContainerp'><em>91-9999874619 <br/>91-9958190385</em></p>
                     </div>
