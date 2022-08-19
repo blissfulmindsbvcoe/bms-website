@@ -53,12 +53,12 @@ const Events = () => {
             </div>
             <div className="Events__bottom-container">
                 <div className='Events__bottomLeftContainer'>
-                    <p className='Events__bottomLeftContainerh'>Celebrating</p>
-                    <p className='Events__bottomLeftContainerh'>Pride Month</p>
+                    <p className='Events__bottomLeftContainerh'>Theme of the Week:</p>
+                    <p className='Events__bottomLeftContainerh'>BODY POSITIVITY</p>
                 </div>
                 <div className='Events__bottomRightContainer'>
                     <p className='Events__bottomRightContainerh'>Latest Blogs</p>
-                    {blogs?.items && <p style={{fontSize: "25px"}}>{blogs.items[0].title}</p>}
+                    {blogs?.items && <p style={{fontSize: "25px", padding: "0 1rem", textAlign: 'center'}}>{blogs.items[0].title}</p>}
                     {blogs?.items && <a className='Events__aa' href={blogs.items[0].url}>Check this blog out!</a>}
                 </div>
             </div>

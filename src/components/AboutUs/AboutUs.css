@@ -11,21 +11,36 @@
 
 .AboutUS__textContainer {
   display: flex;
-  background-image: linear-gradient(to bottom, transparent 0%, #000000bd 60%, #000000 95%);
-  height: 21%;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 60%, #000000bd 90%, #000000 95%);
+  height: 100%;
   color: #fff;
-  padding-left: 4%;
 }
 
-.AboutUs__leftText, .AboutUs__rightText {
-  width: 50%;
+.AboutUs__leftText {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+
+.AboutUs__rightText {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 2%;
+  cursor: pointer;
 }
 
 .AboutUs__a {
   color: #fff;
   font-weight: 300;
   font-size: 1rem;
-  padding-left: 0.1rem;
+  padding-left: 2rem;
 }
 
 .AboutUs__a:link {
@@ -36,5 +51,7 @@
 .AboutUs__h1 {
   font-size: 2.8rem;
   font-weight: 800;
+  cursor: pointer;
   margin-bottom: 0.5rem;
+  padding-left: 2rem;
 }
