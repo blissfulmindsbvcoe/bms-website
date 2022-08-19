@@ -1,5 +1,5 @@
 .Team__container {
-    background-image: url('../../assets/Team/background.jpg');
+    background-image: url('../../assets/Team/background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -71,8 +71,9 @@
     width: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 2%;
+    margin-bottom: 2rem;
 }
 
 .Team__memberImageContainer {
@@ -91,6 +92,11 @@
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-size: 30px;
+    font-weight: 600;
+}
+
+.Team__position {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -133,7 +139,7 @@
     word-wrap: normal;
     width: 50%;
     height: 80%;
-
+    white-space: pre-line;
 }
 
 .Team__teacherCoordinator {

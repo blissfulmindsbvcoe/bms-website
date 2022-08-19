@@ -26,7 +26,7 @@ const Team = () => {
                         <p className='Team__containerSubHeading'>Popularly abbreviated as BMS and founded in 2022, is the first student-led Mental Health society at Bharati Vidyapeeth’s College of Engineering and IP University. The main purpose of BMS is to advocate the cause of spreading awareness about mental health issues and encourage people to look beyond the stigma associated with this sensitive subject. The vision of our society is to create a safe space for all, such that under no circumstance, a student feels hesitant to talk about his/her mental health issues. We aim to destigmatize mental illness by conducting interactive and fun sessions, wherein the students can feel heard and can be given useful advice</p>
                     </div>
                 </div>
-                <div className='Team__heading'>TEACHER COORDINATORS</div>
+                <div className='Team__heading'>OUR MENTOR</div>
                 <div className='Team__teacherCoordinator'>
                     <img src={TeacherData.imageSrc} height='80%' width='40%' alt="teacher"/>
                     <div className='Team__teacherData'>{TeacherData.detail}</div>
@@ -36,6 +36,7 @@ const Team = () => {
                     {FoundersData.map((member, index) => (<div className='Team__personContainer' key={index}>
                             <div className='Team__memberImageContainer'><img className='Team__memberImage' alt="Team" src={member.imageSrc} /></div>
                             <div className='Team__memberName'>{member.name}</div>
+                            <div className='Team__position'>{member.position}</div>
                             <div className='Team__social-icons'>
                                 {member.instagramURL && (
                                     <a
@@ -85,6 +86,7 @@ const Team = () => {
                     {TeamData.map((member, index) => (<div className='Team__personContainer' key={index}>
                             <div className='Team__memberImageContainer'><img className='Team__memberImage' alt="Team" src={member.imageSrc} /></div>
                             <div className='Team__memberName'>{member.name}</div>
+                            <div className='Team__position'>{member.position}</div>
                             <div className='Team__social-icons'>
                                 {member.instagramURL && (
                                     <a
