@@ -4,11 +4,32 @@ import {
     faLinkedin,
     faInstagram
   } from '@fortawesome/free-brands-svg-icons';
-import grppic from '../../assets/Team/grppic.png';
 import { TeamData, FoundersData, TeacherData } from '../../data/team.data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from '../Navbar/Navbar.component';
+import { useState } from 'react';
 const Team = () => {
+
+    const imageCount = 6;
+
+    const [imageNo, setImageNo] = useState(0);
+
+    const nextImage = () => {
+        if(imageNo === imageCount-1) {
+            setImageNo(0)
+        } else {
+            setImageNo(prev => (prev+1))
+        }
+    }
+
+    const prevImage = () => {
+        if(imageNo === 0) {
+            setImageNo(imageCount-1)
+        } else {
+            setImageNo(prev => (prev-1))
+        }
+    }
+
     return (
         <>
             <Navbar isTeam={true}/>
@@ -16,10 +37,10 @@ const Team = () => {
                 <div className='Team__container1'>
                     <div className='Team__container1left'>
                         <div className='Team__Overlay'>
-                            <div className='Team__leftOverlay'><i className="fa-solid fa-angle-left" style={{fontSize: '50px', color: 'black'}}></i></div>
-                            <div className='Team__rightOverlay'><i className="fa-solid fa-angle-right" style={{fontSize: '50px', color: 'black'}}></i></div>
+                            <div className='Team__leftOverlay'  onClick={prevImage}><i className="fa-solid fa-angle-left" style={{fontSize: '50px', color: 'black'}}></i></div>
+                            <div className='Team__rightOverlay' onClick={nextImage}><i className="fa-solid fa-angle-right" style={{fontSize: '50px', color: 'black'}}></i></div>
                         </div>
-                        <img className='Team__image' src={grppic} alt='group pic' height="100%" width="100%" />
+                        <img className='Team__image' src={require(`../../assets/Team/grppic${imageNo}.jpg`)} alt='group pic' height="100%" width="100%" />
                     </div>
                     <div className='Team__container1right'>
                         <p className='Team__containerHeading'>Blissful Minds Society</p>
@@ -28,7 +49,10 @@ const Team = () => {
                 </div>
                 <div className='Team__heading'>OUR MENTOR</div>
                 <div className='Team__teacherCoordinator'>
-                    <img src={TeacherData.imageSrc} height='80%' width='40%' alt="teacher"/>
+                    <div style={{width: '40%'}}>
+                        <img src={TeacherData.imageSrc} height='80%' width='100%' alt="teacher"/>
+                        <p style={{width: '100%', textAlign: 'center', fontWeight: 600}}>Prof. Rubeena Vohra</p>
+                    </div>
                     <div className='Team__teacherData'>{TeacherData.detail}</div>
                 </div>
                 <div className='Team__heading'>OUR FOUNDERS</div>

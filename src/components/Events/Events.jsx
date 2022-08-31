@@ -26,8 +26,12 @@ const Events = () => {
     useEffect(()=> {
         fetch(fetchBlogsURL)
             .then((response) => response.json())
-            .then((data) => {console.log(data);setBlogs(data)});
+            .then((data) => {setBlogs(data)});
     }, [])
+
+    const goToLink = (link) => {
+        window.open(link, '_blank');
+    }
 
     return (
         <div id="events" className="Events__container">
@@ -38,7 +42,7 @@ const Events = () => {
                             <img src={shanti} alt="shaanti" height='100%'/>
                         </div> */}
                         <div className='Events__topLeftContainerDiv2'>
-                            <p className='Events__name'>{EventsData[eventNo].name}</p>
+                            <p className='Events__name' onClick={()=>{goToLink(EventsData[eventNo].pagelink)}}>{EventsData[eventNo].name}</p>
                             <p className='Events__desc'>{EventsData[eventNo].description}</p>    
                         </div>
                     </div>
