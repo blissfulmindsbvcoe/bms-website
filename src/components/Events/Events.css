@@ -72,7 +72,12 @@
 
 .Events__bottomLeftContainerh {
     font-size: 50px;
-    color: darkblue;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
 }
@@ -103,6 +108,12 @@
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.Events__name:hover {
+    transform: scale(1.05);
 }
 
 .Events__desc {
