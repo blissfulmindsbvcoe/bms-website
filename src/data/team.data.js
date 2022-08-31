@@ -1,6 +1,6 @@
 export const TeacherData = {
     name: "Prof. Rubeena Vohra",
-    imageSrc: require('../assets/Team/rubeenamam.PNG'),
+    imageSrc: require('../assets/Team/rubeenamam.jpeg'),
     linkedInURL: 'https://www.google.com/',
     facebookURL: 'https://www.google.com/',
     instagramURL: 'https://www.google.com/',
@@ -39,11 +39,11 @@ export const FoundersData = [
     {
         name: "Nikita Tewary",
         position: "",
-        imageSrc: require('../assets/Team/gurusha.jpeg'),
+        imageSrc: require('../assets/Team/nikita.jpeg'),
         linkedInURL: 'https://www.google.com/',
         facebookURL: 'https://www.google.com/',
         instagramURL: 'https://www.google.com/',
-        detail: ""
+        detail: "Like most of the people out there, I was also clueless when I joined the college, everyone was living a fast pace life, it was an overwhelming experience for me. I couldn't keep up, I wondered how beautiful it would have been if we had a space, a community where we could just slow down, reflect upon our inner selves. So when I was approached for the idea of creating a mental health society it resonated with me to the core because in order to achieve a bright future, unfortunately we are disconnected from our soul. We need a community who accepts everyone with open arms, a community where we can speak our heart out, where we have a lot sessions for self love, self care, inner peace and many more. This is what I invisioned for BMS and I am glad that BMS is going in the right direction with the best team."
     },
 ];
 export const TeamData = [
