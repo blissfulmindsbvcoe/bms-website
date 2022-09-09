@@ -1,0 +1,59 @@
+.Footer__container {
+    height: 35vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer__inner {
+    height: 100%;
+    width: 25%;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.Footer__heading {
+    font-size: large;
+    color: white;
+}
+
+.Footer__subheading {
+    color: white;
+}
+
+.Footer__aboutContainer {
+    display: flex;
+    height: 30%;
+}
+
+.Footer__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Footer__link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Footer__vertLine {
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    margin-left: 0.7em;
+}
+
+.Footer__socialIconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.Footer__icon {
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}

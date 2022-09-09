@@ -8,6 +8,7 @@ import { TeamData, FoundersData, TeacherData } from '../../data/team.data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from '../Navbar/Navbar.component';
 import { useState } from 'react';
+import Footer from '../Footer/footer.component';
 const Team = () => {
 
     const imageCount = 6;
@@ -156,6 +157,7 @@ const Team = () => {
                     )}
                 </div> 
             </div>
+            <Footer isTeam={true}/>
         </>
     );
 }
