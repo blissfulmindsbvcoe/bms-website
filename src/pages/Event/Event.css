@@ -1,0 +1,43 @@
+.EventPage__NotFoundContainer {
+    height: 100vh;
+    background-color: black;
+    background: url('../../assets/EventPage/EventBackground.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.EventPage {
+    overflow-y: auto;
+}
+
+.EventPage__bannerSection {
+    height: 50vh;
+    background: url('../../assets/EventPage/EventBackground.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    font-size: xx-large;
+    font-weight: 900;
+    padding: 1em;
+}
+
+.EventPage__summaryContainer {
+    display: flex;
+    height: 50vh;
+    padding: 2em;
+}
+
+.EventPage__summaryHeading {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.EventPage__photoGallary {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}

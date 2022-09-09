@@ -5,6 +5,7 @@ import Events from '../../components/Events/Events';
 import { useEffect } from 'react';
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar.component'; 
+import Footer from '../../components/Footer/footer.component';
 
 const Home = () => {
     useEffect(() => {
@@ -23,6 +24,7 @@ const Home = () => {
                     <Events />
                     <Contact />
                 </div>
+                <Footer isTeam={false} />
             </div>
         </>
     );

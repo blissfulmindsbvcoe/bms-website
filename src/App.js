@@ -8,6 +8,7 @@ import {
 
 const Home = lazy(() => import('./pages/Home/Home.page'))
 const About = lazy(() => import('./pages/About/About.page'))
+const Event = lazy(() => import('./pages/Event/Event.page'))
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/event/:id' element={<Event/>} />
         </Routes>
         {/* <Footer /> */}
       </Suspense>
